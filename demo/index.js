@@ -1,7 +1,7 @@
 
 import { Con, Row, Col } from 'bee-layout';
 import { Panel } from 'bee-panel';
-import ACPanel from '../src/index';
+import AcPanel from '../src/index';
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import Button from 'bee-button';
@@ -14,7 +14,7 @@ const CARETUP = <i className="uf uf-arrow-up"></i>;
 
 
 import Demo1 from "./demolist/Demo1";
-var DemoArray = [{"example":<Demo1 />,"title":"代码示例展示板","code":"/**\n *\n * @title 代码示例展示板\n * @description 可一键复制代码的展示板\n *\n */\n\nimport React, { Component } from 'react';\nimport ACPanel from '@yonyou/ac-copy-panel';\n\nconst code =`\nimport React, { Component } from 'react';\nimport Temp from '../../src/index';\n\n class Demo1 extends Component {\n    render () {\n        return (\n            <div className=\"demoPadding\">\n                <Temp >复制这段测试代码</Temp>\n            </div>\n        )\n    }\n}\n` \n\nclass Demo1 extends Component {\n\n    constructor(props){\n        super(props)\n          this.state={\n            code : code\n          }\n    }\n    render () {\n        return (\n            <div className=\"demoPadding\">\n                <ACPanel copyable code={code}></ACPanel>\n        )\n    }\n}\n\n\n","desc":" 可一键复制代码的展示板"}]
+var DemoArray = [{"example":<Demo1 />,"title":"代码示例展示板","code":"/**\n *\n * @title 代码示例展示板\n * @description 可一键复制代码的展示板\n *\n */\n\nimport React, { Component } from 'react';\nimport AcPanel from '@yonyou/ac-copy-panel';\n\nconst code =`\nimport React, { Component } from 'react';\nimport Temp from '../../src/index';\n\n class Demo1 extends Component {\n    render () {\n        return (\n            <div className=\"demoPadding\">\n                <Temp >复制这段测试代码</Temp>\n            </div>\n        )\n    }\n}\n` \n\nclass Demo1 extends Component {\n\n    constructor(props){\n        super(props)\n          this.state={\n            code : code\n          }\n    }\n    render () {\n        return (\n            <div className=\"demoPadding\">\n                <AcPanel copyable code={code}></AcPanel>\n            </div>\n        )\n    }\n}\n\n\n","desc":" 可一键复制代码的展示板"}]
 
 
 class Demo extends Component {
@@ -44,7 +44,7 @@ class Demo extends Component {
             <Col md={12} >
                 <h3>{ title }</h3>
                 <p>{ desc }</p>
-                <ACPanel copyable code={code} collapsible expanded={ this.state.open } colors='bordered' header={ example } footer={footer} footerStyle = {{padding: 0}}></ACPanel>
+                <AcPanel copyable code={code} collapsible expanded={ this.state.open } colors='bordered' header={ example } footer={footer} footerStyle = {{padding: 0}}></AcPanel>
             </Col>
         )
     }

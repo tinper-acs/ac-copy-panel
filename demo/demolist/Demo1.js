@@ -6,7 +6,7 @@
  */
 
 import React, { Component } from 'react';
-import ACPanel from '../../src/index';
+import AcPanel from '../../src/index';
 
 const code = "\n\nimport React, { Component } from 'react';\nimport Temp from '../../src/index';\n\n class Demo1 extends Component {\n    render () {\n        return (\n            <div className=\"demoPadding\">\n                <Temp >复制这段测试代码</Temp>\n            </div>\n        )\n    }\n}\n\n\n";
 
@@ -20,7 +20,7 @@ class Demo1 extends Component {
     render () {
         return (
             <div className="demoPadding">
-                <ACPanel copyable code={code}></ACPanel>
+                <AcPanel copyable code={code}></AcPanel>
             </div>
         )
     }

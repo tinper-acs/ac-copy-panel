@@ -17,7 +17,7 @@ const defaultProps = {
   clsPrefix: "u-panel"
 };
 
-class ACPanel extends Component {
+class AcPanel extends Component {
 
   constructor(props) {
     super(props);
@@ -62,7 +62,7 @@ class ACPanel extends Component {
   }
 }
 
-ACPanel.propTypes = propTypes;
-ACPanel.defaultProps = defaultProps;
+AcPanel.propTypes = propTypes;
+AcPanel.defaultProps = defaultProps;
 
-export default ACPanel;
+export default AcPanel;

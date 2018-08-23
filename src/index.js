@@ -1,2 +1,2 @@
-import ACPanel from './panel';
-export default ACPanel;
+import AcPanel from './panel';
+export default AcPanel;
